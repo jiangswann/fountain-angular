@@ -1,0 +1,137 @@
+
+fieldset textarea,
+fieldset input
+{
+	margin: 0px;
+}
+
+fieldset
+{
+	position: relative;
+	margin: 0px;
+	width: auto;
+
+  @include fadein( 500px );
+}
+
+fieldset.has-long-content
+{
+	max-height: 1400px;
+}
+
+fieldset + fieldset,
+fieldset + .c-faux_fieldset,
+.c-faux_fieldset + fieldset
+{
+	margin-top: ($measure-2 + ($measure-2/2));
+}
+
+fieldset legend
+{
+  font-size: 21px;
+  margin-bottom: 15px;
+  max-width: 95%;
+  line-height: 1.3;
+}
+
+fieldset.is-disabled,
+.is-hiding.c-faux_fieldset
+{
+	@include fadeout;
+}
+
+.c-faux_fieldset 
+{
+  @include fadein( 2000px );
+}
+
+
+fieldset > label
+{
+	display: inline-block;
+	margin-bottom: $measure-2;
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* We need to fix the Mozzilla Firefox legend/fieldset bug*/
+@-moz-document url-prefix() {
+  
+  	legend
+	{
+	  float: left;
+	  clear: both;
+	  width: 100%;
+
+	}
+
+}/* end @-moz-document url-prefix() */
+
+
+
+
+
+
+
+
+@media (max-width: $tablet-max) {
+
+	
+
+}/* end $tablet-max */
+
+
+
+
+@media (max-width: $mobile-max) {
+
+	fieldset legend
+	{
+	  font-size: 19px;
+	  margin-bottom: 15px;
+	}
+
+
+}/* end $mobile-max */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

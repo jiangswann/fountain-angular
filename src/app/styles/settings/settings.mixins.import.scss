@@ -1,0 +1,191 @@
+
+
+
+@mixin align_horizontal
+{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0px);
+     -moz-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+       -o-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+
+@mixin align_vertical
+{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0px, -50%);
+     -moz-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+       -o-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+@mixin align_center
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@mixin clear_align
+{
+  -webkit-transform: translate(0px, 0px);
+     -moz-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+       -o-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+@mixin border-radius-top
+{
+   -webkit-border-top-left-radius: $border-radius;
+  -webkit-border-top-right-radius: $border-radius;
+       -moz-border-radius-topleft: $border-radius;
+      -moz-border-radius-topright: $border-radius;
+           border-top-left-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+
+   -webkit-border-bottom-left-radius: 0 !important;
+  -webkit-border-bottom-right-radius: 0 !important;
+       -moz-border-radius-bottomleft: 0 !important;
+      -moz-border-radius-bottomright: 0 !important;
+           border-bottom-left-radius: 0 !important;
+          border-bottom-right-radius: 0 !important;
+}
+
+@mixin border-radius-bottom
+{
+   -webkit-border-top-left-radius: 0 !important;
+  -webkit-border-top-right-radius: 0 !important;
+       -moz-border-radius-topleft: 0 !important;
+      -moz-border-radius-topright: 0 !important;
+           border-top-left-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+
+   -webkit-border-bottom-left-radius: $border-radius;
+  -webkit-border-bottom-right-radius: $border-radius;
+       -moz-border-radius-bottomleft: $border-radius;
+      -moz-border-radius-bottomright: $border-radius;
+           border-bottom-left-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+}
+
+@mixin color_ani
+{
+  -webkit-transition-property: background-color, color;
+     -moz-transition-property: background-color, color;
+      -ms-transition-property: background-color, color;
+       -o-transition-property: background-color, color;
+          transition-property: background-color, color;
+
+  -webkit-transition-duration: 0.3s, 0.3s;
+     -moz-transition-duration: 0.3s, 0.3s;
+      -ms-transition-duration: 0.3s, 0.3s;
+       -o-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+
+     -webkit-transition-delay: 0s, 0s;
+        -moz-transition-delay: 0s, 0s;
+         -ms-transition-delay: 0s, 0s;
+          -o-transition-delay: 0s, 0s;
+             transition-delay: 0s, 0s;
+}
+
+@mixin opacity_ani($time: 0.3s)
+{
+  -webkit-transition-property: opacity;
+     -moz-transition-property: opacity;
+      -ms-transition-property: opacity;
+       -o-transition-property: opacity;
+          transition-property: opacity;
+
+  -webkit-transition-duration: $time;
+     -moz-transition-duration: $time;
+      -ms-transition-duration: $time;
+       -o-transition-duration: $time;
+          transition-duration: $time;
+
+     -webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+         -ms-transition-delay: 0s;
+          -o-transition-delay: 0s;
+             transition-delay: 0s;
+}
+
+
+@mixin fadein($max_height)
+{
+  max-height: $max_height;
+  opacity: 1;
+
+  -webkit-transition-property: max-height, opacity, padding, margin;
+          transition-property: max-height, opacity, padding, margin;
+
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+
+    -webkit-transition-duration: 0.8s, 0.4s, 0.7s, 0.7s;
+            transition-duration: 0.8s, 0.4s, 0.7s, 0.7s;
+
+       -webkit-transition-delay: 0s, 0s, 0s, 0s;
+               transition-delay: 0s, 0s, 0s, 0s;
+
+}
+
+@mixin fadeout
+{
+  overflow: hidden;
+  max-height: 0px;
+  margin: 0px;
+  padding: 0px;
+  opacity: 0;
+
+  -webkit-transition-delay: 0s, 0s, 0s, 0s;
+          transition-delay: 0s, 0s, 0s, 0s;
+}
+
+
+@mixin btn_color_padding_ani
+{
+  -webkit-transition-property: background-color, color, padding;
+     -moz-transition-property: background-color, color, padding;
+      -ms-transition-property: background-color, color, padding;
+       -o-transition-property: background-color, color, padding;
+          transition-property: background-color, color, padding;
+
+  -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+
+     -webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+         -ms-transition-delay: 0s;
+          -o-transition-delay: 0s;
+             transition-delay: 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

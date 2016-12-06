@@ -1,0 +1,247 @@
+
+
+
+.c-btn
+{
+	@include btn_color_padding_ani;
+	min-width: $measure-3;
+	background-color: $color-G2;
+	color: $color-B;
+	cursor: pointer;
+	margin: ($measure-1*1.5) 0 0 0;
+	position: relative;
+	border-radius: $border-radius;
+	line-height: ($measure-1 + 6px);
+	padding: 0 $measure-2 0 $measure-2;
+	text-align: center;
+}
+
+.c-btn,
+input[type="submit"].c-btn,
+button.c-btn
+{
+	height: ($measure-1 + 8px);
+	border: none;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+}
+
+.c-btn.is-ready,
+input[type="submit"].c-btn.is-ready
+{
+	-webkit-animation: pulseB 1.8s linear infinite; /* Safari 4+ */
+       -moz-animation: pulseB 1.8s linear infinite; /* Fx 5+ */
+         -o-animation: pulseB 1.8s linear infinite; /* Opera 12+ */
+            animation: pulseB 1.8s linear infinite; /* IE 10+, Fx 29+ */
+}
+
+.c-btn a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+a.c-btn,
+a.c-btn:hover,
+a.c-btn:hover span
+{
+	color: $color-B;
+}
+
+a.c-btn
+{
+	height: ($measure-1 + 6);
+	display: inline-block;
+	color: $color-B;
+	line-height: ($measure-1 + 6);
+	padding: 0 $measure-2 0 $measure-2;
+}
+
+
+input[type="submit"].c-btn:hover,
+button[type="submit"].c-btn:hover,
+a.c-btn.is-ready:hover,
+.c-btn.is-ready:hover,
+.c-btn--action:hover
+{
+	background-color: $color-G3;
+}
+
+
+.c-btn__span
+{
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+}
+
+.c-btn.pull-right + .c-btn.pull-right
+{
+	margin-right: $measure-2;
+}
+
+.c-btn.pull-right + .c-btn.c-btn--single.pull-right
+{
+	margin-right: 0;
+}
+
+.c-btn__bottom_right
+{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.c-btn__secondary
+{
+	background-color: $color-B2;
+}
+
+.c-btn__secondary:hover,
+button[type="submit"].c-btn__secondary:hover
+{
+	background-color: darken($color-B2, 10%);
+}
+
+.c-btn__secondary + .c-btn
+{
+	margin-left: $measure-2;
+}
+
+.c-btn__action_icon
+{
+  @include align_vertical;
+	position: absolute;
+	width: 14px;
+	height: auto;
+	right: $measure-2;
+}
+
+.c-btn__extra_padded
+{
+	padding: 0 70px 0 70px;
+}
+
+.c-btn.c-btn.is-bdt
+{
+	width: 40px;
+	max-width: 80px;
+	float: left;
+	margin-right: 10px; 
+	margin-top: -4px;
+}
+
+
+
+.c-btn.has-loader_after,
+.c-btn.is-ready.has-loader_after, 
+input[type="submit"].c-btn.is-ready.has-loader_after
+{
+	padding-right: 50px;
+}
+
+.c-btn:after,
+.c-btn.is-ready:after, 
+input[type="submit"].c-btn.is-ready:after
+{
+	content: '';
+	opacity: 0;
+  @include opacity_ani(1.2s);
+}
+
+.c-btn.has-loader_after:after,
+.c-btn.is-ready.has-loader_after:after, 
+input[type="submit"].c-btn.is-ready.has-loader_after:after
+{
+	content: '';
+  @include opacity_ani(1.2s);
+	opacity: 1;
+	background-image: url('/assets/images/spin.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	width: 20px;
+	height: 20px;
+
+	-webkit-animation: rotate 0.9s linear infinite; /* Safari 4+ */
+       -moz-animation: rotate 0.9s linear infinite; /* Fx 5+ */
+         -o-animation: rotate 0.9s linear infinite; /* Opera 12+ */
+        -ms-animation: rotate 0.9s linear infinite;
+            animation: rotate 0.9s linear infinite; /* IE 10+, Fx 29+ */
+}
+
+.ie9 .c-btn.has-loader_after:after,
+.ie9 .c-btn.is-ready.has-loader_after:after, 
+.ie9 input[type="submit"].c-btn.is-ready.has-loader_after:after
+{
+	background-image: url('/assets/images/rolling.gif');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1060px) {
+  
+}
+
+
+
+
+
+
+
+@media (max-width: $tablet-max) {
+
+
+
+}/* end $tablet-max */
+
+
+
+@media (max-width: $mobile-max) {
+
+	.c-btn
+	{
+		margin-top: 34px; 
+		min-width: 240px;
+	}
+
+	.c-btn__secondary + .c-btn
+	{
+		margin-left: 0;
+	}
+
+	.c-btn__secondary + .c-btn,
+	.c-btn + .c-btn__xs_100,
+	.c-btn + .c-btn__xs_100[type="submit"]
+	{
+		margin-top: 14px;
+	}
+
+	.c-btn__xs_100,
+	.c-btn + .c-btn__xs_100
+	{
+		width: 100%;
+		margin-left: -10px;
+		font-size: 15px;
+		padding: 0 10px 0 10px;
+	}
+
+
+}/* end $mobile-max */
+
+
+
+
+
+

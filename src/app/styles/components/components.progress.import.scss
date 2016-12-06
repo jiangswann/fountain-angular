@@ -1,0 +1,129 @@
+
+
+
+.c-progress 
+{
+    @include align_horizontal;
+  	width: 160px;
+  	height: 160px;
+  	margin: $measure-2 0 0 0;
+    cursor: default;
+}
+
+.has-smaller_sidebar_items .c-progress 
+{
+  @include clear_align;
+  width: 80px;
+  height: 80px;
+  left: auto;
+  right: 7px;
+  top: 0;
+  margin-top: 0;
+}
+
+.c-progress text 
+{
+  	font-family: 'Montserrat', sans-serif;
+  	font-size: 60px;
+  	font-weight: 300;
+  	line-height: 1;
+  	fill: $color-G2;
+	
+  	-webkit-transition-property: opacity, -webkit-filter;
+          	transition-property: opacity,         filter;
+
+
+    -webkit-transition-duration: 0.9s, 0.9s;
+            transition-duration: 0.9s, 0.9s;
+
+    -webkit-transition-delay: 0s, 0s;
+            transition-delay: 0s, 0s;
+}
+
+.has-smaller_sidebar_items .c-progress text 
+{
+  font-size: 30px;
+}
+
+.is-100.c-progress
+{
+
+}
+
+.c-progress path.progress_line_0 
+{
+  	fill: $color-G2;
+}
+
+.c-progress path.progress_line_1 
+{
+  	fill: #e5e5e5;
+}
+
+.c-progress .perc
+{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.has-smaller_sidebar_items .c-progress .perc
+{
+  	font-size: 12px;
+}
+
+.is-animating.c-progress text
+{
+    -webkit-filter: url('#blurWide');
+    filter:         url('#blurWide');
+  	opacity: 0.6;
+}
+
+.is-animating-1.c-progress text
+{
+    -webkit-filter: url('#blurWider');
+  	filter:         url('#blurWider');
+  	opacity: 0.5;
+
+    -webkit-transition-duration: 0.4s, 0.7s;
+            transition-duration: 0.4s, 0.7s;
+
+    -webkit-transition-delay: 0s, 1.2s;
+            transition-delay: 0s, 1.2s;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 880px) {
+
+  /*.has-smaller_sidebar_items .c-progress 
+  {
+    right: 2px;
+  }*/
+
+}
+
+
+@media (max-width: $tablet-max) {
+
+
+}/* end $tablet-max */
+
+@media (max-width: $mobile-max) {
+
+
+}/* end $mobile-max */
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+
+
+
+.c-page_progress
+{
+	border-bottom: 1px solid $color-GRAY-5;
+	text-align: center;
+	min-height: 240px;
+	position: relative;
+}
+
+.has-smaller_sidebar_items .c-page_progress
+{
+	margin-top: $measure-2;
+	min-height: 90px;
+}
+
+.c-page_progress__heading
+{
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+.has-smaller_sidebar_items .c-page_progress__heading
+{
+  @include align_vertical;
+	margin-top: -5px;
+	text-align: right;
+	padding-right: 100px;
+	padding-left: 9px;
+
+}
+
+.ie9 .c-page_progress__heading
+{
+	font-weight: 400;
+	padding-right: 94px;
+}
+
+
+@media (max-width: $tablet-max) {
+
+	.c-page_progress
+	{	
+		display: none;
+	}
+
+}/* end $tablet-max */
+
+
+@media (max-width: $mobile-max) {
+
+
+}/* end $mobile-max */
+
+
+
+

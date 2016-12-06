@@ -1,0 +1,73 @@
+
+
+.c-checkbox
+{
+	height: auto;
+	position: relative;
+	width: 100%;
+	text-align: left;
+	margin-top: ($measure-2 / 2);
+}
+
+.c-checkbox__input
+{
+	opacity: 0;
+    left: 0;
+    top: -2px;
+    width: 24px;
+    position: absolute;
+    height: 24px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.c-checkbox__label
+{
+	color: $color-A2;
+	margin: 0;
+    clear: none;
+    padding: 2px 0 4px 38px;
+    cursor: pointer;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.c-checkbox__label:before
+{
+	content: '';
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKVJREFUeNrslSESwyAURCGXiENhojgAt+YM4GFgBkEUDsMV6DZkqCatK099xH+zIBbaWiMX53nGGMkMjDEhxH1oF0oprXWbxFqLxT6TbvHet0dgsbsorMj1STiPMWbf9y3n/I0FSCnxuBv5EUu0REv0ryKaUiqloFMeK5xz70Sc81prCOGZBYt3NY7yR+fOFjb+i1H+dHxHSAj3VJzjOHChPr8EGABiEAA1KvZK8gAAAABJRU5ErkJggg==');
+	background-repeat: no-repeat;
+}
+
+.c-checkbox__input:checked + .c-checkbox__label:before
+{
+	content: '';
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAIAAABvFaqvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAaFJREFUeNpi/P//PwMY3Llz5/r16wykADk5OX19fSjnPxhs2rTpyJEj/0kEFy5cAGqEsBkgply+fPk/WQCoEWIWI9BUoLsQLiQdHD16VFxcnAHuNkoA0BAmBiqBATLo+9+vBRd9K69EYEqxEG8KMIYn3C6+//UaCyMrRS5a/WTaiXe7gYxgmQzyDTr7/uCyRxOADBNBx0jZPKIM2vJ84dqnM5FFnv942Hu74D/DPykOhSLVPkZsurCE0Zz7LUA9nMzcXhIxQO6Pv9/ab2R8/fOJg5mrQmM6NwsfsbGmw28GNq75xufzwACefLfi4bdbQJF8lS55LjUSor9YbYIQm/jf/386bmQufNh55M1WUABLp1sJe5KWjgRZRSvVpzEzsrz//Xr909lAEQMBmxi5YnISpBqvQbpSI4QtziFbqjaRiZGZzJTtLh7hIxkHDFqg63hYBAgnkEGX+xlv37798uVLa2trso24ePEiKIxUVFTevXt35coV8kwBanz06BGogIV7Eljmkho0wPoCHsSM8OoI6EKg2SQ5R1NTE+ghCBsgwAAFD96K9Y2aaAAAAABJRU5ErkJggg==');
+	background-repeat: no-repeat;
+}
+
+a.c-checkbox__label_link
+{
+	color: $color-B1;
+}
+
+
+
+
+
+

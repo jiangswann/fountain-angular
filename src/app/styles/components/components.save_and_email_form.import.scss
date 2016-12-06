@@ -1,0 +1,108 @@
+
+
+
+.c-save_and_email_form
+{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.c-save_and_email_form__content
+{
+	display: inline-block;
+	max-width: 590px;
+	padding-bottom: 50px;
+}
+
+.c-save_and_email_form__form
+{
+	margin-top: ($measure-2 * 1.4);
+}
+
+.c-save_and_email_form__fieldset
+{
+	padding-left: ($measure-4 / 2);
+	padding-right: ($measure-4 / 2);
+}
+
+.c-save_and_email_form__controls
+{
+	padding-left: $measure-2;
+}
+
+.c-save_and_email_form__reassure
+{
+	font-size: 14px;
+    margin: 12px 0 7px -33px;
+    display: inline-block;
+}
+
+.c-save_and_email_form__reassure_icon
+{
+	width: 18px;
+	height: 17px;
+	margin-right: 7px;
+	position: relative;
+	top: -1px;
+}
+
+
+.c-save_and_email_form__content .c-checkbox__label
+{
+	max-width: 510px;
+	padding-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 890px) {
+
+}/* end $tablet-max */
+
+
+@media (max-width: $tablet-max) {
+
+}/* end $tablet-max */
+
+
+@media (max-width: $mobile-max) {
+
+	.c-save_and_email_form__content .c-form_element--48,
+	.c-save_and_email_form__content .c-form_element--96
+	{
+		width: 100%;
+	}
+
+	.c-save_and_email_form__controls
+	{
+		padding-left: 0;
+	}
+
+	.c-save_and_email_form__reassure
+	{
+		font-size: 14px;
+	    margin: 20px 0 24px 0px;
+	    display: inline-block;
+	}
+
+	.c-save_and_email_form__content .c-checkbox__label
+	{
+		padding-right: 10px;
+	}
+
+}/* end $mobile-max */
+
+
+
+
+
+

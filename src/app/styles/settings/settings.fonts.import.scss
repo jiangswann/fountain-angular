@@ -1,0 +1,47 @@
+/*---------------------------------------------------*/
+/*  THIS IS A SETTINGS FILE                          */
+/*---------------------------------------------------*/
+
+
+
+
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat-Light.eot');
+	src: url('/fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/Montserrat-Light.woff2') format('woff2'),
+		 url('/fonts/Montserrat-Light.woff') format('woff'),
+		 url('/fonts/Montserrat-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+$font-family-A: 'Montserrat', 'Helvetica Neue', Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Helvetica, Arial, sans-serif;
+
+
+
+
+
+
+
+
+
+@font-face{
+    font-family:"StymieW01-BoldCondensed";
+    src: url("/fonts/stymie.eot?#iefix");
+    src: url("/fonts/stymie.eot?#iefix") format("eot"),
+    	 url("/fonts/stymie.woff2") format("woff2"),
+    	 url("/fonts/stymie.woff") format("woff"),
+    	 url("/fonts/stymie.ttf") format("truetype"),
+    	 url("/fonts/stymie.svg#f0dd5dec-6055-4f3d-bde2-b382ada1e3b8") format("svg");
+   	font-weight: 300;
+	font-style: normal;
+}
+
+$font-family-B: 'StymieW01-BoldCondensed', 'Helvetica Neue', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, Geneva, Helvetica, Arial, sans-serif;
+
+
+
+

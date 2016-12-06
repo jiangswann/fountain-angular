@@ -1,0 +1,106 @@
+
+
+.u-sprite
+{
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	background-size: 250px 250px;
+}
+
+.u-noselect 
+{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: default;
+}
+
+.u-color_ani,
+.u-color_ani:after 
+{
+  @include color_ani;
+}
+
+.u-opacity_ani 
+{
+  @include opacity_ani;
+}
+
+.u-loader
+{
+  opacity: 0;
+  visibility: hidden;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  z-index: 2;
+  background-image: url(../images/loader.png);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+
+    -webkit-animation: rotate 1s linear infinite; /* Safari 4+ */
+       -moz-animation: rotate 1s linear infinite; /* Fx 5+ */
+         -o-animation: rotate 1s linear infinite; /* Opera 12+ */
+            animation: rotate 1s linear infinite; /* IE 10+, Fx 29+ */
+}
+
+.has-loader .u-loader
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.u-align_right
+{
+  text-align: right;
+}
+
+.u-align_center
+{
+  text-align: center;
+}
+
+.u-no_overflow,
+.u-no_overflow--for_help_icons
+{
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: $tablet-max) {
+
+  .u-BDT-ONLY
+  {
+    display: none !important;
+  }
+
+}/* end @tablet-max */
+
+
+
+@media (max-width: $mobile-max) {
+
+  
+
+}/* end @mobile-max */
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+
+
+.c-fieldset_focus
+{
+	position: absolute;
+	display: block;
+	right: 0;
+	top: -$measure-2;
+	bottom: -($measure-2/3);
+	left: -($measure-2*2);
+	outline: none;
+	background-color: cyan;
+	z-index: -1;
+	max-height: 0px;
+
+	background: $color-GRAY-1;
+	background:    -moz-linear-gradient(left, $color-B 0%, $color-GRAY-1 ($measure-2*3)); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, $color-B 0%, $color-GRAY-1 ($measure-2*3)); /* Chrome10-25,Safari5.1-6 */
+	background:     linear-gradient(to right, $color-B 0%, $color-GRAY-1 ($measure-2*3)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+	-webkit-transition-property: max-height;
+            transition-property: max-height;
+
+    -webkit-transition-duration: 0.7s;
+            transition-duration: 0.7s;
+
+       -webkit-transition-delay: 0s;
+               transition-delay: 0s;
+}
+
+
+
+
+.c-fieldset_focus.is-showing
+{
+	max-height: 700px;
+	top: -$measure-2;
+	bottom: -($measure-2/3);
+}
+
+.c-fieldset_focus.is-leaving
+{
+	top: auto
+}
+

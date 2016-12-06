@@ -1,0 +1,77 @@
+
+
+
+.c-faux_option_btn
+{
+  @include color_ani;
+	width: 100%;
+	height: ($measure-1);
+	background-color: $color-B;
+	border: 1px solid $color-GRAY-2;
+	color: $color-A2;
+	cursor: pointer;
+	margin: 0;
+	position: relative;
+	border-radius: $border-radius;
+	line-height: ($measure-1 - 2px);
+	padding: 0 10px 0 10px;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.c-faux_option_btn.is-active
+{
+	background-color: $color-B1;
+	border: 1px solid $color-B1;
+	color: $color-B;
+}
+
+.c-faux_option_btn__span
+{
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+.c-faux_option_btn.pull-right + .c-faux_option_btn.pull-right
+{
+	margin-right: $measure-2;
+}
+
+.c-faux_option_btn.pull-right + .c-faux_option_btn.c-faux_option_btn--single.pull-right
+{
+	margin-right: 0;
+}
+
+
+.has-invalid-fields
+{
+	.c-faux_option_btn:not(.is-active)
+	{
+		border-color: $color-R1;
+		color: $color-R1;
+	}
+
+}
+
+
+
+
+@media (max-width: 1060px) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+

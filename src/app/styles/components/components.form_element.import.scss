@@ -1,0 +1,475 @@
+
+
+.c-form_element
+{
+	clear: left;
+	margin: 0 0 $measure-4 0;
+
+  @include fadein( 100px );
+}
+
+.has-long-content .c-form_element
+{
+	max-height: 440px;
+}
+
+.c-form_element + .c-form_element
+{
+	/*margin: 0 0 $measure-4 0;*/
+}
+
+.c-form_element--10,
+.c-form_element--20,
+.c-form_element--30,
+.c-form_element--35,
+.c-form_element--39,
+.c-form_element--48,
+.c-form_element--50,
+.c-form_element--60,
+.c-form_element--65,
+.c-form_element--96,
+.c-form_element--98,
+.c-form_element--small,
+.c-form_element--percentage
+{
+	padding-right: $measure-4;
+}
+
+
+.c-form_element--10
+{
+	width: 16.7%;
+	float: left;
+	clear: none;
+}
+
+.c-form_element--20
+{
+	width: 25%;
+	float: left;
+	clear: none;
+}
+
+.c-form_element--30
+{
+	width: 32%;
+	float: left;
+	clear: none;
+}
+
+.c-form_element--35
+{
+	width: 35.5%;
+	float: left;
+	clear: none;
+}
+
+.c-form_element--39
+{
+	width: 39%;
+	float: left;
+	clear: none;
+}
+
+.c-form_element--48
+{
+	width: 48.1%;
+	float: left;
+	clear: none;
+}
+
+.c-form_element--50
+{
+	width: 50%;
+}
+
+.c-form_element--60
+{
+	width: 60.5%;
+}
+
+.c-form_element--65
+{
+	width: 64%;
+}
+
+.c-form_element--96
+{
+	width: 96%;
+}
+
+.c-form_element--98
+{
+	width: 98%;
+}
+
+.c-form_element--popup
+{
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 ($measure-4 - 2) 0;
+}
+
+
+.c-form_element--date_1
+{
+	width: 63px;
+	float: left;
+	clear: none;
+	padding-right: 7px;
+}
+
+.c-form_element--30 .c-form_element--date_1
+{
+	margin-bottom: 0px;
+}
+
+.c-form_element--date_2
+{
+	width: 78px;
+	float: left;
+	clear: none;
+	padding-right: 7px;
+}
+
+.c-form_element--small
+{
+	width: 72px;
+	float: left;
+	clear: none;
+}
+
+.c-form_element--small button,
+.c-form_element--10 button
+{
+	overflow: visible;
+	text-overflow: clip;
+}
+
+.c-form_element--currency
+{
+	clear: left;
+	position: relative;
+}
+
+.c-form_element--currency input
+{
+	padding-left: 28px;
+	letter-spacing: 2px;
+}
+
+.c-form_element--currency:before
+{
+	content: '$';
+	position: absolute;
+	z-index: 1;
+	left: 11px;
+	top: 0px;
+	line-height: $measure-1;
+}
+
+.c-form_element--percentage
+{
+	width: 100px;
+	position: relative;
+	float: left;
+	clear: none;
+}
+
+.c-form_element--percentage:after
+{
+	content: '%';
+	text-align: right;
+	border-radius: $border-radius;
+	width: (100px - $measure-4);
+	height: 100%;
+	background-color: $color-B;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding-right: 12px;
+	color: $color-B1;
+	line-height: $measure-1;
+	z-index: -1;
+}
+
+input.c-form_element__text_field--percentage
+{
+	text-align: right;
+	padding-right: 35px;
+	background-color: transparent;
+}
+
+.c-form_element--percentage_note
+{
+  @include opacity_ani;
+	position: absolute;
+	font-weight: 300;
+	width: 230px;
+	font-size: 12px;
+	left: 100%;
+    top: 50%;
+    color: $color-R1;
+    opacity: 0;
+}
+
+.c-form_element--percentage_note.is-showing
+{
+	opacity: 1;
+}
+
+.has-invalid-fields 
+{
+	.c-form_element__text_field:not(.c-form_element__locked_value):not([data-valid="true"]):not([placeholder="optional"])
+	{
+		border-color: $color-R1;
+		color: $color-R1;
+	}
+
+	.c-form_element__text_field[data-valid="false"][placeholder="optional"]
+	{
+		border-color: $color-R1;
+		color: $color-R1;
+	}
+
+	.c-form_element--currency:before
+	{
+		color: $color-R1;
+	}
+	
+}
+
+
+.is-hiding.c-form_element
+{
+  @include fadeout;
+}
+
+
+.c-form_element__divider
+{
+	width: 100%;
+	height: 1px;
+	background-color: $color-GRAY-2;
+	margin: $measure-2 0 0 0;
+}
+
+.c-form_element__special_legend,
+.c-form_element__special_legend_text
+{
+	color: $color-B1;
+	font-size: 19px;
+	margin-bottom: 27px;
+	width: 100%;
+	position: relative;
+	padding-right: 80px;
+	top: 3px;
+}
+
+.c-form_element__special_legend_text
+{
+	top: 0;
+	padding-right: 2px;
+}
+
+.c-form_element__light_text
+{
+	color: $color-GRAY-2;
+}
+
+.c-form_element__not_available_input
+{
+	border-radius: $border-radius;
+	background-color: fade($color-GRAY-5, 30%);
+	height: $measure-1;
+	padding: 0 $measure-2 0 $measure-2;
+	line-height: $measure-1;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 300;
+    color: $color-GRAY-3;
+}
+
+.c-form_element__locked_value.c-form_element__locked_value
+{
+	color: $color-G1;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 17px;
+}
+input[disabled].c-form_element__locked_value
+{
+  -webkit-text-fill-color: $color-G1;
+  font-weight: 400;
+  opacity: 1;
+}
+input[disabled].c-form_element__locked_value.is-locked_disabled
+{
+  opacity: 0.4;
+}
+
+.c-form_element__fieldset_grouping
+{
+	padding: ($measure-2 / 1) 0 (($measure-2 / 2) - 3) ($measure-2 * 2);
+	border: 1px solid $color-GRAY-3;
+	border-radius: $border-radius;
+	margin-top: $measure-2;
+	margin-left: -40px;
+}
+
+.c-form_element__fieldset_grouping + fieldset
+{
+	margin-top: ($measure-2 * 3);
+}
+
+.c-form_element__list_heading
+{
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $color-B1;
+	font-weight: 400;
+	margin: 0 0 8px 0;
+}
+
+.c-form_element__item_number
+{
+	border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: #4ec623;
+    color: #ffffff;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 14px;
+    position: absolute;
+    top: 4px;
+    left: -33px;
+}
+
+.c-form_element_highlight
+{
+	color: $color-B1;
+}
+
+a.c-form_element__pdf
+{
+	color: $color-B1;
+	display: block;
+	margin: $measure-2 0 ($measure-2 / 2) 0;
+}
+
+a.c-form_element__pdf:hover
+{
+	color: darken($color-B1, 14%);
+}
+
+.c-form_element__pdf_icon
+{
+	width: 24px;
+	height: 40px;
+	position: relative;
+	top: -2px;
+	margin-right: 10px;
+}
+
+.c-form_element--credit_card_icons
+{
+	width: 180px;
+	height: 58px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: $max-width-pad-plus) {
+
+	
+	.c-form_element__fieldset_grouping
+	{
+		margin-left: -20px;
+	}
+
+}/* end $max-width-pad-plus */
+
+
+
+@media (max-width: 890px) {
+
+	.c-form_element--10
+	{
+		width: 22%;
+	}
+
+}/* end $tablet-max */
+
+
+
+@media (max-width: $tablet-max) {
+
+	
+
+}/* end $tablet-max */
+
+
+@media (max-width: $mobile-max) {
+
+
+	.c-form_element:not(.c-form_element--date_1):not(.c-form_element--date_2):not(.c-form_element--small):not(.c-form_element--percentage):not(.c-form_element--xs_50)
+	{
+		width: 100%;
+	}
+
+	.c-form_element.c-form_element--small
+	{
+		width: 33.29%;
+	}
+
+	.c-form_element
+	{
+		margin-bottom: 10px;
+	}
+
+	.c-form_element--xs_50
+	{
+		width: 50%;
+	}
+	
+
+
+}/* end $mobile-max */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

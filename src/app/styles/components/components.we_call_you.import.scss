@@ -1,0 +1,54 @@
+
+
+
+.c-we_call_you
+{
+	display: none;
+
+	position: fixed;
+    height: 128px;
+    margin-top: 0;
+    left: 50%;
+    bottom: 0;
+ 	width: $device-footer-item-width;
+    background-color: #ffffff;
+    z-index: 12;
+    text-align: center;
+    cursor: pointer;
+}
+
+.c-we_call_you__text
+{
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 16px;
+	position: relative;
+	top: 88px;
+
+}
+
+
+
+
+@media (max-width: $tablet-max) {
+
+	.c-we_call_you
+	{
+		display: block;
+	}
+
+}/* end $tablet-max */
+
+
+@media (max-width: $mobile-max) {
+	
+	.c-we_call_you
+	{
+		display: none;
+	}
+
+}/* end $mobile-max */
+
+
+
+

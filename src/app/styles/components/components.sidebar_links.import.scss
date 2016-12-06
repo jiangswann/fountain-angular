@@ -1,0 +1,245 @@
+
+
+
+.c-sidebar_links
+{
+	position: relative;
+}
+
+.c-sidebar_links__item
+{
+	width: 100%;
+	padding: $measure-2 $measure-2 0 40px;
+	position: relative;
+	cursor: default;
+	display: block;
+}
+
+.c-sidebar_links__item:first-child
+{
+	margin-top: ($measure-2/2);
+}
+
+.c-sidebar_links__item + .c-sidebar_links__item
+{
+	margin-top: ($measure-2/2);
+}
+
+a.c-sidebar_links__item
+{
+	cursor: pointer;
+}
+
+a.c-sidebar_links__item:after
+{
+	content: '';
+	position: absolute;
+	width: 104%;
+	height: 92%;
+	background-color: transparent;
+	top: 13px;
+	left: -3%;
+	z-index: -1;
+}
+
+a.c-sidebar_links__item:hover:after
+{
+	background-color: $color-GRAY-1;
+}
+
+.c-sidebar_links__icon
+{
+	max-height: 24px;
+	max-width: 24px;
+	height: auto;
+	position: absolute;
+	top: $measure-2 + 5;
+	left: 2px;
+}
+
+.c-sidebar_links__icon--smaller
+{
+	max-width: 18px;
+	max-height: 18px;
+	top: $measure-2 + 2;
+	left: 4px;
+}
+
+.c-sidebar_links__label
+{
+	font-size: 15px;
+}
+
+.c-sidebar_links__label_larger
+{
+	font-size: 18px;
+}
+
+.c-sidebar_links__label--small
+{
+	font-size: 11px;
+}
+
+.c-sidebar_links__bold,
+.c-sidebar_links__bold_highlight
+{
+	font-weight: 700;
+}
+
+.c-sidebar_links__bold_highlight
+{
+	color: $color-G2;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: $tablet-max) {
+
+	.c-sidebar_links
+	{
+		position: absolute;
+		top: 0;
+		margin: 0;
+		left: 50%;
+		width: $device-footer-item-width;
+		padding: 0;
+		z-index: 2;
+	}
+
+	a.c-sidebar_links__pds
+	{
+		display: none;
+	}
+
+
+	a.c-sidebar_links__phone.c-sidebar_links__phone
+	{
+		display: none;
+	}
+
+	/*a.c-sidebar_links__phone.c-sidebar_links__phone
+	{
+		position: absolute;
+		display: block;
+		height: 128px;
+		margin-top: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: $color-B;
+	}
+
+	a.c-sidebar_links__phone.c-sidebar_links__phone:after
+	{
+		content: 'CALL US';
+		letter-spacing: 1px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 88px;
+		color: $color-A2;
+		z-index: 1;
+		text-align: center;
+		font-weight: 700;
+		font-size: 16px;
+		-webkit-font-smoothing: antialiased;
+		background-color: transparent;
+	}
+
+	a.c-sidebar_links__phone span
+	{
+		display: none;
+	}*/
+
+	.c-sidebar_links__icon
+	{
+		max-width: 40px;
+		max-height: 40px;
+		top: 24px;
+		left: 50%;
+		margin-left: -20px;
+	}
+
+
+}/* end $tablet-max */
+
+
+
+
+@media (max-width: $mobile-max) {
+
+	.c-sidebar_links
+	{
+		width: $device-footer-item-width / 2;
+	}
+
+	a.c-sidebar_links__phone.c-sidebar_links__phone
+	{
+		height: 64px;
+		display: block;
+		position: absolute;
+		margin-top: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: $color-B;
+	}
+
+	a.c-sidebar_links__phone.c-sidebar_links__phone:after
+	{
+		content: 'CALL US';
+		letter-spacing: 0;
+		top: 45px;
+		font-size: 9px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		color: $color-A2;
+		z-index: 1;
+		text-align: center;
+		font-weight: 700;
+		-webkit-font-smoothing: antialiased;
+		background-color: transparent;
+	}
+
+	a.c-sidebar_links__phone span
+	{
+		display: none;
+	}
+
+	.c-sidebar_links__icon
+	{
+		max-width: 26px;
+		max-height: 26px;
+		top: 10px;
+		margin-left: -13px;
+	}
+
+}/* end $mobile-max */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

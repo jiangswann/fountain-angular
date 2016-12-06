@@ -1,0 +1,51 @@
+
+
+.c-payment
+{
+	
+}
+
+.c-payment__secure_line
+{
+	padding: $measure-2;
+	background-color: $color-GRAY-5;
+	width: 94%;
+	line-height: 24px;
+	border-radius: $border-radius;
+	margin-top: ($measure-2 * 2);
+	text-align: center;
+}
+
+.c-payment__lock
+{
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	position: relative;
+	top: -3px;
+}
+
+
+
+
+
+
+
+@media (max-width: $tablet-max) {
+
+
+
+}/* end $tablet-max */
+
+
+@media (max-width: $mobile-max) {
+	.c-payment__secure_line
+	{
+		width: 97%;
+	}
+
+}/* end $mobile-max */
+
+
+
+

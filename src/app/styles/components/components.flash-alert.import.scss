@@ -1,0 +1,86 @@
+
+
+.c-alert
+{
+  @include align_center;
+	width: 100%;
+	max-width: $max-width;
+	position: fixed;
+	top: 190px;
+	background-color: $color-B1;
+	color: $color-B;
+	z-index: 99;
+	border-radius: $border-radius;
+	padding: $measure-2 $measure-2 $measure-2 26px;
+	box-shadow: 0px 5px 40px rgba(0,0,0,0.4);
+}
+
+.c-alert--warning,
+.c-alert--error,
+.c-alert--alert,
+.c-alert--notice
+{
+
+}
+
+.c-alert--warning,
+.c-alert--error,
+.c-alert--alert
+{
+	background-color: $color-B;
+	color: $color-R1;
+}
+
+.c-alert p
+{
+	max-width: 680px;
+}
+
+.c-alert:after
+{
+	content: '';
+	background-image: url('/assets/images/close.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -30px;
+	right: -30px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+
+.c-alert__fade
+{
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	z-index: 90;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: $max-width-pad) {
+
+	.c-alert
+	{
+		width: 90%;
+	}
+
+	.c-alert:after
+	{
+		right: 0px;
+	}
+
+
+}/* end $max-width-pad */
+
+
+
+

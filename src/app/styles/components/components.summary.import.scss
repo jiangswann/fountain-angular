@@ -1,0 +1,257 @@
+
+
+
+.c-summary
+{
+
+}
+
+.c-summary__item
+{
+	margin-top: ($measure-2 * 2);
+	padding-bottom: 14px;
+	border-bottom: 1px solid $color-GRAY-3;
+}
+
+.c-summary__item + .c-summary__item
+{
+	margin-top: ($measure-2 * 2);
+}
+
+.c-summary__bike_cost
+{	
+	padding: $measure-2;
+	text-align: center;
+	position: relative;
+	border-radius: $border-radius;
+	border: 1px solid $color-GRAY-3;
+	margin-right: -10px;
+}
+
+.c-summary__bike_cost--total
+{
+	text-align: right;
+	border: none;
+	padding-right: 3px;
+}
+
+.c-summary__bike_cost--m
+{
+	color: $color-B1;
+	font-size: 22px;
+	padding-bottom: 4px;
+	font-weight: 300;
+}
+
+.c-summary__bike_cost--y
+{
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.c-summary__bike_cost--total .c-summary__bike_cost--m,
+.c-summary__bike_cost--total .c-summary__bike_cost--y
+{
+	padding: 7px;
+	/*font-weight: 300;*/
+}
+
+.c-summary__bike_cost--total .c-summary__bike_cost--m
+{
+	font-size: 38px;
+	padding-top: 0;
+}
+
+.c-summary__bike_cost--total .c-summary__bike_cost--y
+{
+	font-size: 20px;
+}
+
+.c-summary__rider_heading
+{
+	font-size: 16px;
+	color: $color-B1;
+	font-weight: 300;
+	margin: 0 0 8px 0;
+}
+
+.c-summary__rider
+{
+	padding: 5px 10px 10px 20px;
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+
+.c-summary__rider_name,
+.c-summary__rider_usage
+{
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 23px;
+}
+
+.c-summary__rider_usage .c-summary__value
+{
+	letter-spacing: 1px;
+}
+
+.c-summary__rider_extras
+{
+	opacity: 0.8;
+	padding-left: 13px;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.c-summary__rider_extras li
+{
+	position: relative;
+	margin-left: 17px;
+}
+
+.c-summary__rider_extras li:before
+{
+	content: '';
+	background-image: url('/assets/images/flags.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 4px;
+	left: -30px;
+	width: 22px;
+	height: 22px;
+}
+
+.c-summary__value,
+.c-summary__rider_extras
+{
+	font-weight: 300;
+	/*margin-left: 5px;*/
+}
+
+.c-summary__btn
+{
+	max-width: 270px;
+}
+
+.c-summary__lighter,
+.c-summary__smaller
+{
+	font-size: 0.72em;
+}
+
+.c-summary__lighter
+{
+	font-weight: 300;
+}
+
+.c-summary__lighter.is-set_width
+{
+	width: 80px;
+	display: inline-block;
+	text-align: left;
+}
+
+.c-summary__email
+{
+	position: relative;
+	top: 30px;
+	right: 8px;
+	color: $color-B1;
+	height: $measure-1;
+	line-height: ($measure-1 + 1);
+	padding: 0;
+	display: block;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a.c-btn.c-summary__proceed
+{
+	top: -98px;
+}
+
+.c-summary__list
+{
+	position: relative;
+	left: 24px;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 300;
+	margin: 0 0 30px 0;
+}
+
+.c-summary__list li
+{
+	position: relative;
+	line-height: 27px;
+}
+
+.c-summary__list li:before
+{
+	content: '';
+	background-image: url('/assets/images/breadcrumb-tick.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 6px;
+	left: -24px;
+	width: 16px;
+	height: 16px;
+}
+
+.c-summary__list--additional_benefits
+{
+
+}
+
+
+
+
+
+@media (max-width: $tablet-max) {
+
+	a.c-btn.c-summary__proceed
+	{
+		top: 0px;
+	}
+
+}/* end $tablet-max */
+
+
+
+@media (max-width: $mobile-max) {
+
+	.c-summary__list
+	{
+		position: relative;
+		margin-bottom: 10px;
+	}
+
+	.c-summary__bike_cost
+	{	
+		margin-left: -10px;
+	}
+
+
+}/* end $mobile-max */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

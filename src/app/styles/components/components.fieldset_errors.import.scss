@@ -1,0 +1,87 @@
+
+
+
+.c-fieldset_error
+{
+	clear: left;
+	float: left;
+	color: $color-R1;
+	font-size: 13px;
+	font-weight: 300;
+	top: -5px;
+	position: relative;
+	padding-bottom: 2px;
+	max-height: 0px;
+	height: auto;
+	max-width: 0px;
+	overflow: hidden;
+	display: block;
+	opacity: 0;
+
+	-webkit-transition-property: max-height, max-width, opacity;
+            transition-property: max-height, max-width, opacity;
+
+    -webkit-transition-duration: 1.7s, 0s, 1s;
+            transition-duration: 1.7s, 0s, 1s;
+
+       -webkit-transition-delay: 0s, 1.8s, 0s;
+               transition-delay: 0s, 1.8s, 0s;
+}
+
+.c-fieldset_error__space_1
+{
+	top: 0;
+	padding-top: 8px;
+	padding-bottom: 15px;
+}
+
+.has-invalid-fields .is-back-end .c-fieldset_error
+{
+	max-height: 0px;
+	max-width: 0px;
+	opacity: 0;
+}
+
+.has-invalid-fields .c-fieldset_error,
+.has-invalid-fields__back_end .is-back-end .c-fieldset_error,
+.c-fieldset_error.is-showing-anytime
+{
+	opacity: 1;
+	max-height: 70px;
+	max-width: 1000px;
+
+	-webkit-transition-delay: 0.1s, 0s, 0.3s;
+            transition-delay: 0.1s, 0s, 0.3s;
+}
+
+.c-fieldset_error.is-showing-anytime.discount-warn
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+
+.c-form_element--popup .c-fieldset_error
+{
+	top: 4px;
+	text-align: left;
+}
+
+.c-fieldset_error + .c-fieldset_error
+{
+	float: left;
+	clear: none;
+}
+
+.c-fieldset_error + .c-fieldset_error:before
+{
+	content: '. ';
+}
+
+
+
+
+
+
+
+

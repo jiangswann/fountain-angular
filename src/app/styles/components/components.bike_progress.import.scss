@@ -1,0 +1,139 @@
+
+
+
+.c-bike_progress
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 70px;
+	height: 90px;
+}
+
+.c-bike_progress__img
+{
+	width: 70px;
+	height: 47px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.c-bike_progress__img.is-1
+{
+	opacity: 0.14;
+}
+
+.c-bike_progress__img.is-2
+{
+
+}
+
+.c-bike_progress__progress
+{
+	overflow: hidden;
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	-webkit-transition-property: width;
+            transition-property: width;
+
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+
+       -webkit-transition-delay: 0s;
+               transition-delay: 0s;
+}
+
+.c-bike_progress__total
+{
+  @include opacity_ani;
+	font-weight: 300;
+	font-size: 32px;
+	text-align: right;
+	width: 100%;
+	top: 44px;
+	left: 0;
+	position: absolute;
+	color: $color-B1;
+}
+
+.c-bike_progress__total.is-1
+{
+	color: $color-A2;
+	opacity: 0.24;
+}
+
+.c-bike_progress__total.is-2
+{
+	opacity: 0;
+}
+
+.c-bike_progress__total.is-2.is-over
+{
+	opacity: 0;
+}
+
+
+.c-bike_progress__needed
+{
+	font-weight: 700;
+	font-size: 14px;
+	text-align: right;
+	width: 100%;
+	top: 78px;
+	left: 0;
+	position: absolute;
+	color: $color-R1;
+}
+
+.c-bike_progress[data-valid="true"] .c-bike_progress__needed
+{
+	opacity: 0;
+}
+         
+
+.c-bike_progress__percentage_symbol
+{
+	font-size: 0.7em;
+	position: relative;
+	top: -0.35em;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: $tablet-max) {
+
+	/*.c-bike_progress
+	{
+		top: -19px;
+	}*/
+
+}/* end $tablet-max */
+
+
+
+@media (max-width: $mobile-max) {
+
+	
+
+
+}/* end $mobile-max */
+
+
+
+
+
+
+
+

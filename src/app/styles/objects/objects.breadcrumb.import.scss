@@ -1,0 +1,218 @@
+
+
+
+.o-breadcrumb
+{
+	position: absolute;
+	width: 100%;
+	height: $breadcrumb-height;
+	background-color: $color-GRAY-6;
+	border-top: 1px solid $color-GRAY-5;
+	z-index: 1;
+}
+
+.o-breadcrumb.is-fixed
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: auto;
+	z-index: 12;
+}
+
+.is-not_ready .o-breadcrumb.is-fixed
+{
+	position: relative;
+	top: auto;
+	left: auto;
+	z-index: 1;
+}
+
+.o-breadcrumb__inline_space
+{
+	position: relative;
+	height: $breadcrumb-height + 1;
+	width: 100%;
+}
+
+.o-breadcrumb__container
+{
+   @include align_horizontal;
+	max-width: $max-width-pad;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 0 ($measure-2 * 2) 0 ($measure-2 * 2);
+}
+
+.o-breadcrumb__icon
+{
+  @include align_vertical;
+	width: 17px;
+	height: auto;
+	right: -22px;
+	/*margin-top: -2px;*/
+}
+
+.o-breadcrumb__item
+{
+	float: left;
+	font-size: 14px;
+	line-height: $breadcrumb-height;
+	color: fade( $color-A2, 40% );
+	cursor: default;
+	position: relative;
+}
+
+.o-breadcrumb__item a
+{
+	cursor: default;
+}
+
+.o-breadcrumb__item + .o-breadcrumb__item
+{
+	margin-left: ($measure-2 * 2) + 4;
+	
+}
+
+.o-breadcrumb__link
+{
+
+}
+
+.o-breadcrumb__num
+{
+	margin-right: ($measure-2 / 5);
+}
+
+.o-breadcrumb__item.is-complete,
+.o-breadcrumb__item.is-complete a,
+.o-breadcrumb__item.is-current,
+.o-breadcrumb__item.is-current a
+{
+	color: $color-A2;
+	cursor: pointer;
+}
+
+.o-breadcrumb__item.is-current
+{
+	
+}
+            
+
+
+
+
+@media (max-width: ($tablet-max + 50) ) {
+
+	
+	.o-breadcrumb
+	{
+		top: 60px;
+	}
+
+}/* end $tablet-max + 50 */
+
+
+
+      
+
+
+@media (max-width: $tablet-max) {
+
+
+
+}/* end $tablet-max */
+
+
+
+@media (max-width: $mobile-max) {
+
+	.o-breadcrumb__item
+	{
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background-color: $color-GRAY-3;
+		overflow: hidden;
+		top: 15px;
+		
+	}
+
+	.o-breadcrumb__item span.o-breadcrumb__link,
+	.o-breadcrumb__item a.o-breadcrumb__link
+	{
+		color: transparent;
+		position: relative;
+		width: 100%;
+	    height: 100%;
+	    top: 0;
+	    display: block;
+	}
+
+	.o-breadcrumb__item + .o-breadcrumb__item
+	{
+		margin-left: 10px;
+	}
+
+	.is-complete.o-breadcrumb__item
+	{
+		background-color: $color-B;
+	}
+
+	.is-current.o-breadcrumb__item
+	{
+		background-color: $color-G2;
+	}
+
+	.o-breadcrumb__num
+	{
+		position: absolute;
+		display: block;
+		text-align: center;
+		top: 0px;
+		left: 0;
+		width: 25px;
+		line-height: 25px;
+		color: $color-A2;
+		font-size: 0px;
+		padding-left: 0px;
+	}
+
+	.o-breadcrumb__num:first-letter
+	{
+		font-size: 12px;
+	}
+
+	.is-current.o-breadcrumb__item .o-breadcrumb__num
+	{
+		color: $color-B;
+	}
+
+	.o-breadcrumb__container
+	{
+		padding-left: 80px;
+		position: relative;
+	}
+
+	.o-breadcrumb__container:before
+	{
+		content: 'STEP';
+		position: absolute;
+		left: 20px;
+		top: 17px;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+

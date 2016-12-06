@@ -1,0 +1,45 @@
+
+
+
+.table
+{
+	margin-top: 20px;
+}
+
+.table td
+{
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.table td + td
+{
+	padding-right: 20px;
+}
+
+tr.quote_number td
+{
+	background-color: $color-B1;
+	color: white;
+}
+
+
+
+@media (max-width: $tablet-max) {
+	
+
+}/* end $tablet-max */
+
+
+
+
+@media (max-width: $mobile-max) {
+
+
+}/* end $mobile-max */
+
+
+
+
+
+

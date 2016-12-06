@@ -1,0 +1,326 @@
+
+
+
+.o-footer
+{
+	width: 100%;
+	background-color: $color-A3;
+	min-height: $header-height;
+	color: $color-B;
+	font-size: 13px;
+	/*padding-bottom: $measure-2;*/
+	position: relative;
+	z-index: 1;
+}
+
+.o-footer__content
+{
+	width: 100%;
+	max-width: $max-width-pad;
+	margin: $measure-3 auto 0 auto;
+	padding-top: ($measure-2 * 2);
+}
+
+.o-footer__heading
+{
+	color: $color-B;
+	font-size: 13px;
+	cursor: default;
+}
+
+.o-footer__link:hover
+{
+	color: $color-G2;
+}
+
+.o-footer__link[href=""]:hover
+{
+	color: $color-B;
+}
+
+.o-footer__col
+{
+	padding-left: $measure-2;
+	margin-right: 80px;
+	float: left;
+}
+
+.o-footer__menu_item
+{
+	line-height: 2;
+}
+
+.o-footer__col--inset
+{
+	padding: $measure-2 0 $measure-2 0;
+}
+
+.o-footer__divider_section
+{
+	border-top: 1px solid $color-GRAY-4;
+	border-top: 1px solid fade($color-GRAY-4, 50%);
+	margin: 0 $measure-2 0 $measure-2;
+}
+
+.o-footer__logo
+{
+	width: 197px;
+	height: 65px;
+	margin-top: $measure-2;
+}
+
+
+
+.o-footer__social_link
+{
+	display: inline-block;
+	position: relative;
+	height: 37px;
+	width: 50px;
+	float: right;
+	margin: 2px 0 0 24px;
+	text-align: right;
+}
+
+.o-footer__social_link--shrink
+{
+	width: 42px;
+	margin-left: 10px;
+}
+
+.o-footer__social_link:last-child
+{
+	position: relative;
+	top: -1px;
+}
+
+.o-footer__social_link--shrink + .o-footer__social_link
+{
+
+}
+
+
+.o-footer__social_icon,
+.o-footer__social_icon_hov
+{
+  @include opacity_ani;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.o-footer__social_icon_hov,
+.o-footer__social_icon:hover
+{
+	opacity: 0
+}
+
+.o-footer__social_icon_hov:hover
+{
+	opacity: 1;
+}
+
+.o-footer__legal_row
+{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+
+.o-footer__copyright
+{
+	font-size: 12px;
+	font-weight: 300;
+	float: right;
+	clear: both;
+	margin-top: $measure-2;
+	margin-bottom: $measure-2;
+}
+
+.o-footer__iag
+{
+	float: right;
+	clear: both;
+}
+
+.o-footer__iag_logo
+{
+	width: 140px;
+	height: 47px;
+}
+
+.o-footer__social_column
+{
+	padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 940px) {
+	
+	.o-footer__social_column
+	{
+		position: absolute;
+		right: $measure-2;
+		left: auto;
+	}
+
+}/* end 940px */
+
+
+@media (max-width: 900px) {
+	
+	.o-footer__social_column
+	{
+		position: relative;
+		right: auto;
+		left: auto;
+		float: left;
+		margin-top: 20px;
+		top: 60px;
+	}
+
+	.o-footer__legal_row
+	{
+		top: -60px;
+		position: relative;
+		margin-bottom: 40px;
+	}
+
+}/* end 940px */
+
+
+
+@media (max-width: 767px) {
+	
+	.o-footer__tablet_left
+	{
+		float: left;
+	}
+
+	.o-footer__iag
+	{
+		float: left;
+		margin-left: 59px;
+		margin-bottom: 20px;
+	}
+
+	.o-footer__copyright
+	{
+		text-align: left !important;
+		margin-bottom: 0px;
+	}
+
+	.o-footer__social_column
+	{
+		clear: both;
+	}
+
+}/* end 767px */
+
+
+
+@media (max-width: $tablet-max) {
+
+	.o-footer
+	{
+		padding-bottom: 60px;
+	}
+
+	/* helper for device nav bar */
+	.o-footer:after 
+	{
+		content: '';
+		position: fixed;
+	    background-color: #ffffff;
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	    height: 128px;
+	    top: auto !important;
+	    margin-left: 0;
+	    width: auto;
+	    z-index: 13;
+	    box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.3);
+	    padding-top: 0;
+	}
+
+
+
+}/* end $tablet-max */
+
+
+
+
+@media (max-width: $mobile-max) {
+
+	.o-footer
+	{
+		padding-bottom: 60px;
+	}
+
+	/* helper for device nav bar */
+	.o-footer:after
+	{
+	    height: 64px;
+	}
+
+	.o-footer__content 
+	{
+	    padding-top: 40px;
+	    margin-top: 70px;
+	}
+
+	.o-footer__col
+	{
+		float: left;
+		clear: both;
+		margin-right: 0;
+	}
+
+	.o-footer__col + .o-footer__col
+	{
+		margin-top: 20px;
+	}
+
+	.o-footer__break_for_mobile
+	{
+		float: left;
+		clear: both;
+		display: inline-block;
+		margin-top: 4px;
+		position: relative;
+	}
+	
+	.o-footer__social_column
+	{
+		left: -20px;
+    	top: 108px;
+	}
+
+	.o-footer__hide_for_mobile
+	{
+		display: none;
+	}
+
+
+}/* end $mobile-max */
+
+
+
+
+
+
+
+
+
+

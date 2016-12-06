@@ -1,0 +1,29 @@
+/*---------------------------------------------------*/
+/*  THIS IS A SETTINGS FILE                          */
+/*---------------------------------------------------*/
+
+
+
+$border-radius: 5px;         /* Used for things like - anywhere we use the rounded corners */
+
+$measure-1: 40px;            /* Used for things like - input and button heights */
+$measure-2: 20px;            /* Used for things like - standard margins, fieldset margin-top, form-padding */
+$measure-3: 170px;           /* Used for things like - standard button min-width */
+$measure-4: 16px;            /* Used for things like - standard left-margins between inputs */
+
+$header-height : 75px;       /* Used for things like - height of the header nav bar */
+$breadcrumb-height : 57px;   /* Used for things like - height of the header nav bar */
+$aside-width : 252px;        /* Used for things like - width of the sidebar column */
+
+$device-footer-item-width: 150px; /* Used for tablet and mobile (mobile = tablet/2) fixed footer */
+ 
+$max-width: 970px;           /* Used for things like - maximum page width (column) */
+$max-width-pad: ($max-width + ($measure-2 * 2)); /* Used for things like - maximum page width media-queries */
+$max-width-pad-plus: ($max-width + ($measure-2 * 4)); /* Used for things like - maximum page width media-queries */
+
+$tablet-max: 800px;          /* Used for breakpoints - media queries (was 768px now 800px for samsung) */
+$mobile-max: 750px;          /* Used for breakpoints - media queries */
+
+
+
+

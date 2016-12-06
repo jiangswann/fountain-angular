@@ -1,0 +1,23 @@
+
+
+input[type="tel"].c-date 
+{
+	padding-left: 15px;
+}
+
+.has-invalid-fields
+{
+  .c-date
+  {
+    border-color: $color-R1;
+    color: $color-R1;
+  }
+
+}
+
+
+
+
+
+
+

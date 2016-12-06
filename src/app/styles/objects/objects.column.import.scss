@@ -1,0 +1,179 @@
+
+
+
+.o-column
+{
+  	width: 100%;
+  	max-width: $max-width-pad;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+
+main.o-column
+{
+	min-height: 810px;
+}
+
+.c-alert + main.o-column
+{
+	-webkit-filter: grayscale(80%); 
+            filter: grayscale(80%);
+}
+
+.o-column__main
+{
+	padding: 0 (($measure-2 * 2) + $aside-width) 0 ($measure-2 * 2);
+	position: relative;
+}
+
+.o-column__sub
+{
+	margin: 0 -10px 0 -10px;
+}
+
+.o-column__main--premium_section
+{
+	padding: 0 $measure-2  ($measure-2 * 3) ($measure-2 * 2);
+}
+
+.o-column__aside
+{
+	padding-top: 78px;
+	width: $aside-width;
+	position: absolute;
+	top: 0;
+	right: $measure-2;
+}
+
+.o-column__aside.has-no_breadcrumb
+{
+	padding-top: 86px;
+}
+
+.is-fixed.o-column__aside
+{
+	position: fixed;
+	top: 80px;
+	padding-top: 0px;
+	left: 50%;
+	right: auto;
+	margin-left: calc( (($max-width-pad / 2) - $aside-width) - $measure-2 );
+}
+
+.is-fixed.o-column__aside.has-no_breadcrumb
+{
+	top: 50px;
+}
+
+.o-column__aside--premium_page
+{
+	padding-top: 167px;
+}
+
+.is-fixed.o-column__aside--premium_page
+{
+	top: 278px;
+}
+
+.o-breadcrumb.is-fixed + .o-column
+{
+	margin-top: $breadcrumb-height;
+}
+
+
+
+.o-column__main--text-column h2,
+.o-column__main--text-column h3,
+.o-column__main--text-column h4,
+.o-column__main--text-column span,
+.o-column__main--text-column p,
+.o-column__main--text-column ul,
+.o-column__main--text-column fieldset
+{
+	max-width: 480px;
+}
+
+
+
+
+
+
+@media (max-width: $max-width-pad) {
+	
+	.is-fixed.o-column__aside
+	{
+		left: auto;
+		right: $measure-2;
+	}
+}/* end $max-width-pad */
+
+
+
+
+@media (max-width: $tablet-max) {
+	
+	.o-column__aside,
+	.is-fixed.o-column__aside
+	{
+		position: fixed;
+		background-color: $color-B;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		height: 128px;
+		top: auto !important;
+		margin-left: 0;
+		width: auto;
+		z-index: 12;
+		/* box-shadow: 0 2px 15px 5px rgba(0,0,0,0.3); */
+		/* now on helper in psudo :after footer */
+		padding-top: 0;
+	}
+
+	.o-column__aside.has-no_breadcrumb
+	{
+		padding-top: 0;
+	}
+
+	.o-column__aside:after
+	{
+		content: '';
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		background-color: $color-B;
+	}
+
+	.o-column__main
+	{
+		padding: 0 ($measure-2 * 1) 0 ($measure-2 * 2);
+	}
+
+}/* end $tablet-max */
+
+
+
+
+@media (max-width: $mobile-max) {
+
+	.o-column__aside,
+	.is-fixed.o-column__aside
+	{
+		height: 64px;
+	}
+
+}/* end $mobile-max */
+
+
+
+
+
+
+
+
+
+
+

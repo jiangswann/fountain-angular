@@ -1,13 +1,4 @@
-class TechsController {
-  /** @ngInject */
-  constructor($http) {
-    $http
-      .get('app/techs/techs.json')
-      .then(response => {
-        this.techs = response.data;
-      });
-  }
-}
+import TechsController from './techs.controller';
 
 export const techs = {
   template: require('./techs.html'),
